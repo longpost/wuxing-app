@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>五行关系图谱 | Wu Xing Explorer</title>
+  <meta name="description" content="五行相生相克、子母、所胜/所不胜、相乘相侮、母子相及 —— 交互式学习与查询" />
+  <link rel="icon" href="./assets/favicon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">五</span>
+      <div class="brand-text">
+        <div class="title" data-i18n="appTitle">五行关系图谱</div>
+        <div class="subtitle" data-i18n="appSubtitle">相生相克 · 子母 · 乘侮 · 关系查询</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="navlink" href="#/" data-route="/" data-i18n="navHome">主图</a>
+      <a class="navlink" href="#/lookup" data-route="/lookup" data-i18n="navLookup">关系查询</a>
+      <a class="navlink" href="#/sim" data-route="/sim" data-i18n="navSim">失衡模拟</a>
+      <a class="navlink" href="#/glossary" data-route="/glossary" data-i18n="navGlossary">术语</a>
+      <a class="navlink" href="#/about" data-route="/about" data-i18n="navAbout">关于</a>
+    </nav>
+
+    <div class="actions">
+      <button id="langBtn" class="btn secondary" type="button" aria-label="Language">
+        <span id="langLabel">中文</span>
+      </button>
+      <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer" data-i18n="navGithub">GitHub</a>
+    </div>
+  </header>
+
+  <main id="app" class="container" role="main"></main>
+
+  <footer class="footer">
+    <span data-i18n="footerNote">教学/科普用途：不提供医疗诊断或处方建议。</span>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
